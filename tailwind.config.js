@@ -33,9 +33,13 @@ module.exports = {
       padding: {
         '18': '4.5rem'
       },
-      fontFamily:{
+      width: {
+        '150': '35rem',
+        '120':'30rem'
+      },
+      fontFamily: {
         'pixel': ['Pixelify Sans', 'sans-serif'],
-        'dancing':['Dancing Script','cursive']
+        'dancing': ['Dancing Script', 'cursive']
       },
       height: theme => ({
         auto: 'auto',

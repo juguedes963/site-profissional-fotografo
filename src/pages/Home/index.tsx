@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/Header'
 import Galeria from '../../components/Galeria'
 import Masonry from 'react-masonry-css';
+import FotoGabriel from '../../assets/gabriel.jpg'
 const photos = [
     {
         photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
@@ -40,16 +41,23 @@ export default function Home() {
                     <h2 className='md:text-7xl text-3xl font-dancing  text-gray-300'>
                         Fotografia
                     </h2>
-                </div>
 
+                </div>
+                <span className='border-2 border-white w-full px-5 flex flex-row justify-center items-center bg-red-400 ' >
+                    a
+                </span>
             </section>
             <section className='w-full h-screen bg-black '>
+                <div className='flex flex-row justify-center items-center'>
+                    <div className=' md:w-1/4 bg-white border-2  ' />
+                </div>
                 <div className='flex flex-col md:flex-row w-full h-full justify-center items-center'>
-                    <div className='bg-red-900 md:w-1/2'>
-                        <img src='' />
+
+                    <div className=' md:w-1/2 flex flex-row items-center justify-center'>
+                        <img src={FotoGabriel} className='rounded-full w-96  h-96 ' />
                     </div>
-                    <div className='w-full px-5 md:w-1/2 md:ml-10'>
-                        <h1 className='text-white text-3xl mb-5 font-pixel'>
+                    <div className='w-full px-5 md:w-1/2 md:ml-10 flex flex-col justify-start items-start'>
+                        <h1 className='text-white text-3xl mb-5 font-pixel w-full '>
                             Gabriel Lima
                         </h1>
                         <p className='text-white w-full md:w-1/2 text-lg font-pixel tracking-wide leading-loose'>
@@ -87,7 +95,7 @@ export default function Home() {
                         </h3>
                     </div>
 
-                  
+
                     <Masonry
                         breakpointCols={breakpointColumnsObj}
                         className='my-masonry-grid w-8/12 pr-3'
