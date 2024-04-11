@@ -37,7 +37,7 @@ export default function Home() {
         <main>
             <section className='w-full h-screen bg-black'>
                 <div className='flex flex-col w-full h-full justify-center items-center'>
-                    <h1 className='md:text-9xl text-4xl font-pixel text-white'>Portifólio</h1>
+                    <h1 className='md:text-9xl text-4xl font-pixel text-white'>Meu Portifólio</h1>
                     <h2 className='md:text-7xl text-3xl font-dancing  text-gray-300'>
                         Fotografia
                     </h2>
