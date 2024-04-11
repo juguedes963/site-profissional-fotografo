@@ -52,7 +52,7 @@ export default function Home() {
                 <div className='flex flex-col md:flex-row w-full h-full justify-center items-center'>
 
                     <div className=' md:w-1/2 flex flex-row items-center justify-center'>
-                        <img src={FotoGabriel} className='rounded-full w-96  h-96 ' />
+                        <img src={FotoGabriel} className='rounded-full w-110  h-110 ' />
                     </div>
                     <div className='w-full px-5 md:w-1/2 md:ml-10 flex flex-col justify-start items-start'>
                         <h1 className='text-white text-3xl mb-5 font-pixel w-full '>

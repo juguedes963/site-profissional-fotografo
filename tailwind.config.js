@@ -35,7 +35,13 @@ module.exports = {
       },
       width: {
         '150': '35rem',
-        '120':'30rem'
+        '120': '30rem',
+        '110': '28rem'
+      },
+      height: {
+        '150': '35rem',
+        '120': '30rem',
+        '110': '28rem'
       },
       fontFamily: {
         'pixel': ['Pixelify Sans', 'sans-serif'],
