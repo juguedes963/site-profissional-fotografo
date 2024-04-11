@@ -5,26 +5,24 @@ import Masonry from 'react-masonry-css';
 import FotoGabriel from '../../assets/gabriel.jpg'
 const photos = [
     {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
+        photos: require('../../assets/casuais/c1.jpeg')
     },
     {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
+        
+        photos: require('../../assets/casuais/c2.jpeg')
     },
     {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
+        
+        photos: require('../../assets/casuais/c3.jpeg')
     },
     {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
+        
+        photos: require('../../assets/casuais/c4.jpeg')
     },
     {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
+        
+        photos: require('../../assets/casuais/c5.jpeg')
     },
-    {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
-    },
-    {
-        photos: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5g1H1BhbYpKokiKKeuI0RhI0F0_7wHY0FMhFcKKrrA&s"
-    }
 ]
 export default function Home() {
     const breakpointColumnsObj = {
@@ -90,8 +88,8 @@ export default function Home() {
                 <div className='flex flex-col w-full h-full justify-center items-center'>
                     <div className='flex flex-col'>
                         <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'>
-                            Fotografia de
-                            Eventos
+                           
+                            Ensaios Casuais
                         </h3>
                     </div>
 
