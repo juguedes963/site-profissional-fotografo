@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Incluindo a biblioteca FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+  /* Estilos para o popup */
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+    padding: 100px;
+    z-index: 9999;
+    border-radius: 15px;
+  }
+
+  /* Estilos para os botões */
+  .button-container {
+    display: flex;
+    justify-content: flex-start; /* Alterado para alinhar os botões à esquerda */
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+
+  .button-img {
+    cursor: pointer;
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px; /* Adicionado espaçamento entre os botões */
+  }
+
+  /* Estilos para o botão de fechar (ícone de X) */
+  .close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #101a6ebb;
+  }
+
+  /* Estilos para todas as imagens */
+  .custom-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para a imagem no final */
+  .mockup-image {
+      
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    max-width: 230px;
+    height: auto;
+  }
+
+  /* Estilos para a divisão de duas colunas */
+  .two-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alterado para alinhar os itens ao topo */
+    max-width: 800px;
+    margin: 2% auto;
+  }
+
+  .column {
+    flex: 0 0 48%; /* Distribui o espaço igualmente entre as duas colunas, com uma margem mínima */
+  }
+</style>
+</head>
+<body> 
+  <!-- Divisão de duas colunas -->
+  <div class="two-column">
+    <div class="column">
+      <p>O Módulo auxilio universitário foi desenvolvido para fornecer orientação para os estudantes acadêmicos como podem utilizar da bolsa municipal para realizar sua graduação.</p>
+
+      <!-- Botões de imagem -->
+      <div class="button-container">
+        <!-- Botão 1 -->
+        <img src="https://setec.itajai.sc.gov.br/wp-content/uploads/2024/03/auxilio-universitario.jpg" alt="Botão 1" class="button-img" onclick="togglePopup('popup1')">
+        <!-- Botão 2 -->
+        <img src="https://setec.itajai.sc.gov.br/wp-content/uploads/2024/03/auxilio-universitario.jpg" alt="Botão 2" class="button-img" onclick="togglePopup('popup2')">
+      </div>
+    </div>
+
+    <!-- Segunda coluna vazia -->
+    <div class="column"></div>
+  </div>
+
+  <!-- Popups -->
+  <div id="popup1" class="popup">
+    <h2>Cidadão</h2>
+    <p>O Módulo auxilio universitário foi desenvolvido para fornecer orientação para os estudantes acadêmicos como podem utilizar da bolsa municipal para realizar sua graduação.</p>
+    <!-- Ícone de X para fechar o popup -->
+    <i class="fas fa-times close-icon" onclick="togglePopup('popup1')" aria-label="Fechar Pop-up"></i>
+  </div>
+
+  <div id="popup2" class="popup">
+    <h2>Servidor</h2>
+    <p>O Módulo auxilio universitário foi desenvolvido para fornecer orientação para os estudantes acadêmicos como podem utilizar da bolsa municipal para realizar sua graduação.</p>
+    <!-- Ícone de X para fechar o popup -->
+    <i class="fas fa-times close-icon" onclick="togglePopup('popup2')" aria-label="Fechar Pop-up"></i>
+  </div>
+
+  <!-- Imagem adicional no final -->
+  <img src="https://setec.itajai.sc.gov.br/wp-content/themes/setec/img/outdoor-1-cell-phone-1.png?v=1" alt="Bottom Image" class="mockup-image">
+
+  <!-- Incluindo a biblioteca FontAwesome -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+  <script>
+  // Função para abrir ou fechar o popup com base no ID fornecido
+  function togglePopup(popupId) {
+    var popup = document.getElementById(popupId);
+    let body=document.querySelector('body')
+      body.style.backgroundColor='#f3f3f3'
+    if (popup.style.display === "block") {
+      popup.style.display = "none";
+  
+    } else {
+      popup.style.display = "block";
+    }
+  }
+  </script>
+</body>
+</html>
