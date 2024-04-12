@@ -5,6 +5,11 @@ module.exports = {
   ],
   important: true,
   theme: {
+    height:{
+      '150': '35rem',
+      '120': '30rem',
+      '110': '28rem'
+    },
     extend: {
       backgroundImage: {
         'section-home-one': "url('/src/assets/home-1.jpg')",
@@ -34,11 +39,6 @@ module.exports = {
         '18': '4.5rem'
       },
       width: {
-        '150': '35rem',
-        '120': '30rem',
-        '110': '28rem'
-      },
-      height: {
         '150': '35rem',
         '120': '30rem',
         '110': '28rem'
