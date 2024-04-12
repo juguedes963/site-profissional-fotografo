@@ -105,9 +105,9 @@ export default function Home() {
     };
 
     return (
-        <main className='bg-black'>
+        <main className=''>
             <Header />
-            <section className='w-full h-screen bg-black' id='portifolio'>
+            <section className='w-full h-screen ' id='portifolio'>
                 <div className='flex flex-col w-full h-full justify-center items-center'>
                     <h1 className='md:text-9xl text-4xl font-pixel text-white'>Meu Portifólio</h1>
                     <h2 className='md:text-7xl text-3xl font-pixel  text-gray-300'>
@@ -117,7 +117,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='w-full h-screen bg-black md:pb-36' id='profissional'>
+            <section className='w-full h-screen  md:pb-36' id='profissional'>
                 <Line />
                 <div className='flex flex-col md:flex-row w-full h-full justify-center items-center'>
 
@@ -146,7 +146,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='w-full h-full  bg-black md:pb-20' id='casual'>
+            <section className='w-full h-full   md:pb-20' id='casual'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center items-center md:pt-10'>
                     <div className='flex flex-col'>
@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='w-full h-full   bg-black md:pb-20' id='casamento'>
+            <section className='w-full h-full    md:pb-20' id='casamento'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center md:pt-10 items-center'>
                     <div className='flex flex-col'>
@@ -202,7 +202,7 @@ export default function Home() {
                 </div>
 
             </section>
-            <section className='w-full h-full   bg-black md:pb-20' id='newborn'>
+            <section className='w-full h-full  md:pb-20' id='newborn'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center items-center md:pt-10'>
                     <div className='flex flex-col'>
@@ -230,8 +230,8 @@ export default function Home() {
                 </div>
 
             </section>
-            <footer className='bg-black h-full w-full flex flex-col justify-center items-center'>
-                <div className='mt-5  font-pixel grid grid-cols-1 md:w-1/3 bg-black'>
+            <footer className=' h-full w-full flex flex-col justify-center items-center'>
+                <div className='mt-5  font-pixel grid grid-cols-1 md:w-1/3 '>
                     <div className='flex flex-row px-5 cursor-pointer items-center justify-center'>
                         <IoLogoWhatsapp color='white' size={40} />
                         <span className='border-2 w-full border-white font-pixel text-white px-10 py-2 rounded-3xl mx-2 my-2 flex justify-center' onClick={() => {
