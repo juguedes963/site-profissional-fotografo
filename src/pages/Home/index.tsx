@@ -8,14 +8,12 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { photos, photosMatch, photosNew } from '../../constants';
+import { useNavigate, useNavigation } from 'react-router-dom';
 
 
 export default function Home() {
-    const breakpointColumnsObj = {
-        default: 4,
-        1100: 3,
-        700: 2,
-    };
+    const navigate = useNavigate();
+
 
     return (
         <main className=''>
@@ -30,6 +28,7 @@ export default function Home() {
                 </div>
 
             </section>
+
             <section className='w-full h-screen  md:pb-36' id='profissional'>
                 <Line />
                 <div className='flex flex-col md:flex-row w-full h-full justify-center items-center'>
@@ -59,87 +58,62 @@ export default function Home() {
                 </div>
 
             </section>
+
             <section className='w-full h-full   md:pb-20' id='casual'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center items-center md:pt-10'>
-                    <div className='flex flex-col'>
-                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'>
+                    <div className='flex flex-col cursor-pointer' >
+                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'
+                            onClick={() => navigate('/details', {
+                                state: {
+                                    ...photos
+                                }
+                            })}>
 
                             Ensaios Casuais
                         </h3>
                     </div>
 
 
-                    <Masonry
-                        breakpointCols={breakpointColumnsObj}
-                        className='my-masonry-grid  w-full md:w-8/12 pr-3'
-                        columnClassName='my-masonry-grid_column'
-                    >
-                        {photos?.map((item, key) => {
-                            console.log(item, key)
-                            return (
-                                <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
-                                    <Galeria key={key} fotos={item.photos} />
-                                </div>
-                            )
-                        })}
-                    </Masonry>
+
                 </div>
 
             </section>
+
             <section className='w-full h-full    md:pb-20' id='casamento'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center md:pt-10 items-center'>
-                    <div className='flex flex-col'>
-                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'>
+                    <div className='flex flex-col cursor-pointer'>
+                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel' onClick={() => navigate('/details', {
+                            state: {
+                                ...photosMatch
+                            }
+                        })}>
 
                             Ensaios Casamento
                         </h3>
                     </div>
 
 
-                    <Masonry
-                        breakpointCols={breakpointColumnsObj}
-                        className='my-masonry-grid  w-full md:w-8/12 pr-3'
-                        columnClassName='my-masonry-grid_column'
-                    >
-                        {photosMatch?.map((item, key) => {
-                            console.log(item, key)
-                            return (
-                                <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
-                                    <Galeria key={key} fotos={item.photos} />
-                                </div>
-                            )
-                        })}
-                    </Masonry>
+
                 </div>
 
             </section>
             <section className='w-full h-full  md:pb-20' id='newborn'>
                 <Line />
                 <div className='flex flex-col w-full h-full justify-center items-center md:pt-10'>
-                    <div className='flex flex-col'>
-                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'>
+                    <div className='flex flex-col cursor-pointer' >
+                        <h3 className='text-white text-left  text-3xl  mb-5 font-pixel'
+                            onClick={() => navigate('/details', {
+                                state: {
+                                    ...photosNew
+                                }
+                            })}
+                        >
 
                             Ensaios Newborn
                         </h3>
                     </div>
-
-
-                    <Masonry
-                        breakpointCols={breakpointColumnsObj}
-                        className='my-masonry-grid w-full md:w-8/12 pr-3'
-                        columnClassName='my-masonry-grid_column'
-                    >
-                        {photosNew?.map((item, key) => {
-                            console.log(item, key)
-                            return (
-                                <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
-                                    <Galeria key={key} fotos={item.photos} />
-                                </div>
-                            )
-                        })}
-                    </Masonry>
                 </div>
 
             </section>
@@ -168,7 +142,7 @@ export default function Home() {
                     <div className='flex flex-row  px-5 items-center justify-center cursor-pointer'>
                         <MdEmail color="white" size={40} />
                         <span className='border-2 mx-2 w-full border-white font-pixel text-white px-10 py-2 rounded-3xl my-2 flex justify-center'
-                        onClick={()=>window.open('mailto:limagabriel260@gmail.com?subject=subject&body=body')}
+                            onClick={() => window.open('mailto:limagabriel260@gmail.com?subject=subject&body=body')}
                         >
                             limagabriel260@gmail.com
                         </span>
