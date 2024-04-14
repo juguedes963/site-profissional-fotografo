@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FiAlignJustify } from "react-icons/fi";
+import Logo from '../assets/Lima.svg'
 import { useNavigate } from 'react-router-dom';
 const menuNav = [
     {
@@ -28,10 +29,17 @@ function Header() {
     const navigation = useNavigate()
     return (
         <nav className={`${!toogle ? 'fixed bg-transparent-black ' : 'fixed md:fixed  bg-black'} z-50 md:py-5 w-full`}>
-            <div className='flex md:hidden flex-row justify-end  items-end w-screen ' onClick={() => setToogle(!toogle)}>
+            <div className='flex md:hidden flex-row justify-between  items-center w-screen ' onClick={() => setToogle(!toogle)}>
+                <div>
+                    <img src={Logo} className='w-16' />
+                </div>
                 <FiAlignJustify className='cursor-pointer' color='white' size={50} />
             </div>
+
             <ul className={`${toogle ? 'hidden' : ''} md:flex md:flex-row mx-5 md:items-center  md:w-3/4 md:justify-center`}>
+                <div className={`${!toogle ? 'hidden' : ''}`}>
+                    <img src={Logo} className=' w-16' />
+                </div>
                 {menuNav.map(key => {
                     return (
                         <li className='uppercase text-white md:mx-5 font-medium pb-3 cursor-pointer ' key={key.name} >

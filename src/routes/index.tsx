@@ -3,6 +3,7 @@ import {
     useRouteError
 } from "react-router-dom";
 import Home from "../pages/Home";
+import Details from "../pages/Details";
 
 
 export const routes = createBrowserRouter([
@@ -10,6 +11,11 @@ export const routes = createBrowserRouter([
         path: "/",
         Component: Home,
         element: <Home />,
+        errorElement: <ErrorPage />
+    }, {
+        path: "/details",
+        Component: Details,
+        element: <Details />,
         errorElement: <ErrorPage />
     }
 

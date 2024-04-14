@@ -5,7 +5,7 @@ module.exports = {
   ],
   important: true,
   theme: {
-    height:{
+    height: {
       '150': '35rem',
       '120': '30rem',
       '110': '28rem'
@@ -29,6 +29,7 @@ module.exports = {
         },
         '999999': "#999999",
         'E3E3E3': "#E3E3E3",
+        "#000000ad": "#000000ad",
         'transparent-black': "#00000085"
       },
       margin: {
@@ -89,6 +90,7 @@ module.exports = {
         customMenu: '45%',
         full: '100%',
         section: '60vh',
+        types:'15vh',
         screen: '100vh',
         headerImage: '10rem',
         fit: 'fit-content',
