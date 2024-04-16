@@ -104,7 +104,7 @@ export default function Details() {
                         <div className='flex flex-row '>
                             <div>
                                 < h3 className='mb-5 text-4xl font-pixel text-white'>
-                                    Make-Off
+                                Making Off
                                 </h3 >
 
 
@@ -137,7 +137,7 @@ export default function Details() {
                     <>
                         <div>
                             < h3 className='mb-5 text-4xl font-pixel text-white'>
-                                Ensaios Pre-Welding
+                            Pré-Wedding
                             </h3 >
                         </div>
                         <Masonry

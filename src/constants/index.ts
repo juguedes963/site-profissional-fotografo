@@ -83,6 +83,16 @@ const photosMatch = [
         photos: require('../assets/pre/pre2.jpeg'),
         type: "preWelding"
     },
+    {
+
+        photos: require('../assets/pre/pre3.jpeg'),
+        type: "preWelding"
+    },
+    {
+
+        photos: require('../assets/pre/pre4.jpeg'),
+        type: "preWelding"
+    },
 ]
 const photosNew = [
     {
