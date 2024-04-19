@@ -42,8 +42,8 @@ function Header() {
                 </div>
                 {menuNav.map(key => {
                     return (
-                        <li className='uppercase text-white md:mx-5 font-medium pb-3 cursor-pointer ' key={key.name} >
-                            <a href={key.route} className='font-pixel'>
+                        <li className='uppercase text-white md:mx-5 font-medium pb-3 cursor-pointer hover:border-b-2' key={key.name} >
+                            <a href={key.route} >
                                 {key.name}
                             </a>
 

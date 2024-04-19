@@ -32,11 +32,11 @@ export default function Details() {
                         <div>
                             {
                                 photos.find(item => item.type == `casual`) ? (
-                                    < h3 className='  text-4xl font-pixel text-white'>
+                                    < h3 className='  text-4xl  text-white'>
                                         Ensaios Casuais
                                     </h3 >
                                 ) : (
-                                    < h3 className=' text-4xl font-pixel text-white'>
+                                    < h3 className=' text-4xl  text-white'>
                                         Ensaios Newborn
                                     </h3 >
 
@@ -55,7 +55,7 @@ export default function Details() {
 
                             return (
                                 <>
-                                    <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
+                                    <div  key={key + item.photos}  className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
 
                                         <Galeria key={key} fotos={item.photos} />
                                     </div>
@@ -75,7 +75,7 @@ export default function Details() {
                         <div className='flex flex-row items-center my-4 '>
                             <MdKeyboardBackspace className='cursor-pointer mr-5' color='white' size={36} onClick={() => window.location.assign('/')} />
 
-                            < h3 className=' text-2xl md:text-4xl font-pixel text-white'>
+                            < h3 className=' text-2xl md:text-4xl  text-white'>
                                 Ensaios Casamento
                             </h3 >
                         </div>
@@ -86,7 +86,7 @@ export default function Details() {
                         >
                             {filteredMatch.map((item, key) => {
                                 return (
-                                    <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
+                                    <div key={key + item.photos} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
                                         <Galeria key={key} fotos={item.photos} />
                                     </div>
                                 )
@@ -103,8 +103,8 @@ export default function Details() {
                     <>
                         <div className='flex flex-row '>
                             <div>
-                                < h3 className='mb-5 text-4xl font-pixel text-white'>
-                                Making Off
+                                < h3 className='mb-5 text-4xl  text-white'>
+                                    Making Off
                                 </h3 >
 
 
@@ -118,7 +118,7 @@ export default function Details() {
                         >
                             {filteredMake.map((item, key) => {
                                 return (
-                                    <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
+                                    <div  key={key + item.photos}  className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
                                         <Galeria key={key} fotos={item.photos} />
                                     </div>
                                 )
@@ -136,8 +136,8 @@ export default function Details() {
                 filteredPre.length > 1 && (
                     <>
                         <div>
-                            < h3 className='mb-5 text-4xl font-pixel text-white'>
-                            Pré-Wedding
+                            < h3 className='mb-5 text-4xl  text-white'>
+                                Pré-Wedding
                             </h3 >
                         </div>
                         <Masonry
@@ -147,7 +147,7 @@ export default function Details() {
                         >
                             {filteredPre.map((item, key) => {
                                 return (
-                                    <div key={key} className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
+                                    <div  key={key + item.photos}  className='relative aspect-w-1 aspect-h-1 gap-4 hover:bg-transparent bg-red'>
                                         <Galeria key={key} fotos={item.photos} />
                                     </div>
                                 )
